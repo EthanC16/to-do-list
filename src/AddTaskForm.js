@@ -23,7 +23,7 @@ const AddTaskForm = ({ addTask }) => {
         value={newTask}
         onChange={handleInputChange}
       />
-      <button className="add-button" type="submit">Add</button>
+      <button className="add-button" type="submit">Add Task</button>
     </form>
   );
 };
