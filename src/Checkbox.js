@@ -1,17 +1,13 @@
-import React, { useState } from "react";
-
 const Checkbox = ({ isChecked, onChange }) => {
-  const [checked, setChecked] = useState(isChecked);
 
   const handleCheckboxChange = () => {
-    setChecked(!checked);
-    onChange(!checked);
+    onChange(!isChecked);
   };
 
   return (
     <input
       type="checkbox"
-      checked={checked}
+      checked={isChecked}
       onChange={handleCheckboxChange}
     />
   );
